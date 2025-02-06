@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ILoveDoc</title>
+</head>
+<body>
+	<div th:if=${filePath!=null}>
+	<a href="@{/downloadFile(filePath=${filePath})}" class="btn btn-primary">Download File</a>
+
+	</div>
+	
+	 <div th:if="${filePath == null}">
+        <p>There was an issue with the file upload. Please try again.</p>
+    </div>
+</body>
+</html>
