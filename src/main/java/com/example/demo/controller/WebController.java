@@ -38,7 +38,7 @@ public class WebController {
 	}
 	@GetMapping("index")
 	public ModelAndView getIndex() {
-		log.info("welcoe to getINdex()");
+		log.info("welcoe to getIndex()");
 		ModelAndView mav=new ModelAndView("index");
 		return mav;
 	}
